@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invest Dashboard Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>📊 InvestPro</h2>
+  <button onclick="showTab('watchlist')">Watchlist</button>
+  <button onclick="showTab('portfolio')">Portfolio</button>
+  <button onclick="showTab('analysis')">Analysis</button>
+</div>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <input placeholder="Search stock...">
+  <span id="marketStatus">🟢 Market Open</span>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <section id="watchlist" class="tab active"></section>
+  <section id="portfolio" class="tab"></section>
+  <section id="analysis" class="tab"></section>
+
+</div>
+
+<!-- MOBILE BOTTOM NAV -->
+<div class="bottom-nav">
+  <button onclick="showTab('watchlist')">Watch</button>
+  <button onclick="showTab('portfolio')">Port</button>
+  <button onclick="showTab('analysis')">AI</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
